@@ -12,8 +12,9 @@ see https://docs.docker.com/engine/installation/
 `docker run -it -p 8080:8080 tracy-demo:0.1.0`
 
 ### Establish your docker host IP address
-`docker-machine ip default`
-Let's refer to the address returned as DOCKER_HOST_IP
+`docker-machine ip default`<br>
+I recommend adding this address to your hosts file to avoid having to remember it.
+I have added it as dockerhost, so from now on all urls will refer to it.
 
 ### Open Tracy web application
-open http://DOCKER_HOST_IP/twa in your browser
+open http://dockerhost:8080/twa in your browser
