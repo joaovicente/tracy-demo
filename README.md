@@ -13,7 +13,7 @@ see https://docs.docker.com/engine/installation/
 
 ### Establish your docker host IP address
 `docker-machine ip default`
-Ler's refer to the address returned as DOCKER_HOST_IP
+Let's refer to the address returned as DOCKER_HOST_IP
 
 ### Open Tracy web application
 open http://DOCKER_HOST_IP/twa in your browser
