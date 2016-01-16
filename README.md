@@ -17,4 +17,4 @@ I recommend adding this address to your <a href="https://en.wikipedia.org/wiki/H
 I have added it as dockerhost, so from now on all urls will refer to it.
 
 ### Open Tracy web application
-open http://dockerhost:8080/twa/ in your browser
+open <a href="http://dockerhost:8080/twa/"/> in your browser
