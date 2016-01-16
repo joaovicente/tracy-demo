@@ -16,4 +16,4 @@ see https://docs.docker.com/engine/installation/
 Ler's refer to the address returned as DOCKER_HOST_IP
 
 ### Open Tracy web application
-open http://<DOCKER_HOST_IP>/twa in your browser
+open http://DOCKER_HOST_IP/twa in your browser
