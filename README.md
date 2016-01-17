@@ -9,12 +9,17 @@ see https://docs.docker.com/engine/installation/
 `docker build -t tracy-demo:0.1.0 .`
 
 ### Run the Docker image
-`docker run -it -p 8080:8080 tracy-demo:0.1.0`
+`docker run --rm -it -p 8080:8080 --name tracy-demo tracy-demo:0.1.0`
 
 ### Establish your docker host IP address
 `docker-machine ip default`<br>
-I recommend adding this address to your <a href="https://en.wikipedia.org/wiki/Hosts_(file)">Hosts file</a> to avoid having to remember it.<br>
-I have added it as dockerhost, so from now on all urls will refer to it.
+The Tracy Web App will attempt to connect to a host named tws.
+You will need to add tws and dockerhost to your <a href="https://en.wikipedia.org/wiki/Hosts_(file)">Hosts file</a>.<br>
+My hosts file contain the following entries
+`
+192.168.99.100 dockerhost
+192.168.99.100 tws
+`
 
 ### Open Tracy web application
 open <a href="http://dockerhost:8080/twa/">http://dockerhost:8080/twa</a> in your browser
