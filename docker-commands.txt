@@ -1,0 +1,11 @@
+# Start each container individually
+docker run -d --name elasticsearch -p 9200:9200 elasticsearch:2.1.0
+docker run -d --name kibana -p 5601:5601 --link elasticsearch:elasticsearch kibana:4.3.0
+docker run -d --name logstash --link elasticsearch:elasticsearch -v "$PWD"/tracy-logs:/tracy-logs -v "$PWD"/logstash.conf:/etc/logstash/conf.d/logstash.conf logstash logstash -f /etc/logstash/conf.d/logstash.conf
+
+# Start all using Docker compose
+docker-compose build && docker-compose up -d
+
+# Stop all using Docker compose
+docker-compose stop
+
