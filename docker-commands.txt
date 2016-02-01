@@ -9,3 +9,8 @@ docker-compose build && docker-compose up -d
 # Stop all using Docker compose
 docker-compose stop
 
+# Get Tracy event generator
+wget https://github.com/joaovicente/hello-tracy/releases/download/v0.0.1/hello-tracy-0.0.1.jar
+
+# Generate Tracy events
+java -jar hello-tracy-0.0.1.jar | tee ./tracy-logs/tracy.log
