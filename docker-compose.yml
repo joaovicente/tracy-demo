@@ -2,6 +2,9 @@ elasticsearch:
   image: elasticsearch:2.1.0
   ports:
     - 9200:9200
+  volumes:
+    - ./esdata:/usr/share/elasticsearch/data
+  command: /bin/bash -c 'usermod -u 1000 elasticsearch; gosu elasticsearch elasticsearch'
 
 kibana:
   image: kibana:4.3.0
