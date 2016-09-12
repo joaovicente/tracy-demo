@@ -19,6 +19,15 @@ My hosts file contain the following entries<br>
 ```
 
 ### Step 2: Build the tracy-ui Docker image
+First clone this repository 
+```
+git clone https://github.com/joaovicente/tracy-demo.git
+```
+Now step into tracy-demo folder
+```
+cd tracy-demo
+```
+Build tracy-ui Docker image
 ```
 docker build -t joaovicente/tracy-ui tracy-ui/
 ```
