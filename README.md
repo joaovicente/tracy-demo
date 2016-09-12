@@ -1,7 +1,7 @@
 # tracy-demo
 The quickest way to get tracy-demo running is using Docker.
 
-## The docker way
+## Quick start
 ### Step 1: Install Docker
 see https://docs.docker.com/engine/installation/
 
@@ -94,3 +94,7 @@ You can then see the timelines<br>
 <br>
 And inspect the Tracy events content, where you will find developer specified transaction meta-data<br>
 <img width="1440" alt="Inspect Tracy events" src="https://cloud.githubusercontent.com/assets/3578589/18456133/786ae9a4-7946-11e6-9c41-14ba72b935dc.png">
+
+## Measure performance of a real application
+>Comming soon
+
