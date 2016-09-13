@@ -1,5 +1,8 @@
 # tracy-demo
-The quickest way to get tracy-demo running is using Docker.
+[Tracy](https://github.com/joaovicente/tracy) is an an Open Source Java instrumentation library which, along with its companions ([tracy-web-services](https://github.com/joaovicente/tracy-web-services) and [tracy-ui](https://github.com/joaovicente/tracy-ui)) make up an Open Source Application Performance Management framework.
+<br>
+<br>
+*tracy-demo* Illustrates the quickest way to get tracy-demo running is using Docker on your development environment.
 
 ## Quick start
 ### Step 1: Install Docker
@@ -23,11 +26,11 @@ First clone this repository
 ```
 git clone https://github.com/joaovicente/tracy-demo.git
 ```
-Now step into tracy-demo folder
+Next step into tracy-demo folder
 ```
 cd tracy-demo
 ```
-Build tracy-ui Docker image
+Now build the tracy-ui Docker image
 ```
 docker build -t joaovicente/tracy-ui tracy-ui/
 ```
