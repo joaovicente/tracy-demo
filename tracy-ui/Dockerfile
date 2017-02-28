@@ -6,7 +6,7 @@ RUN mkdir -p /usr/src/tracy-ui
 WORKDIR /usr/src/tracy-ui
 
 # Bundle app source
-ENV TUI_VERSION 0.2.0
+ENV TUI_VERSION 0.4.0
 ADD https://github.com/joaovicente/tracy-ui/archive/v$TUI_VERSION.tar.gz /usr/src/tracy-ui
 RUN tar -xvzf v$TUI_VERSION.tar.gz
 RUN rm -rf tracy-ui-$TUI_VERSION/e2e-tests
